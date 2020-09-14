@@ -63,7 +63,6 @@ func newSingletonFactory() {
 		dynamicClient: dynamicClient,
 		restMapper:    restMapper,
 	}
-	singletonFactory.runBackgroundCacheReset(1 * time.Minute)
 }
 
 // GetResourceClient returns the resource client using a singleton factory
